@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_userInformation_title" android:key="pref_user_category"/>
+    <CheckBoxPreference
+        android:key="pref_remember"
+        android:title="@string/remember"
+        android:summary="@string/rememberHint"
+        android:defaultValue="false"
+        />
+    <Preference
+        android:key="pref_changePassword"
+        android:title="Change you password"
+        android:summary="Click here to change your password"
+        />
+</PreferenceScreen>

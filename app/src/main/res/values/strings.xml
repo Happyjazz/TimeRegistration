@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TimeRegistration</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_task_registration">TaskRegistration</string>
+    <string name="pref_userInformation_title">User information</string>
+    <string name="remember">Remember user information?</string>
+    <string name="rememberHint">Unchecking will delete the stored user information.</string>
+</resources>

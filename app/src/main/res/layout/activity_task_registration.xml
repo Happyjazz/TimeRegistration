@@ -1,0 +1,263 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.martin.timeregistration.TaskRegistrationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/buttonPrev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:onClick="SelectPrevDate"
+                android:text="Prev" />
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/buttonPrev"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:onClick="SelectNextDate"
+                android:text="Next" />
+
+            <TextView
+                android:id="@+id/textViewCurrentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textViewTask1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/buttonPrev"
+                android:layout_marginTop="20dp"
+                android:text="Task 1:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textViewTask2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewTask1"
+                android:layout_marginTop="20dp"
+                android:text="Task 2:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textViewTask3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewTask2"
+                android:layout_marginTop="20dp"
+                android:text="Task 3:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textViewTask4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewTask3"
+                android:layout_marginTop="20dp"
+                android:text="Task 4:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textViewTask5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewTask4"
+                android:layout_marginTop="20dp"
+                android:text="Task 5:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textViewTask6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewTask5"
+                android:layout_marginTop="20dp"
+                android:text="Task 6:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textViewTask7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewTask6"
+                android:layout_marginTop="20dp"
+                android:text="Task 7:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textViewTask8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewTask7"
+                android:layout_marginTop="20dp"
+                android:text="Task 8:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textViewTask9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewTask8"
+                android:layout_marginTop="20dp"
+                android:text="Task 9:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editTextTask1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewTask1"
+                android:layout_below="@+id/buttonPrev"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/textViewTask1"
+                android:ems="4"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editTextTask2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewTask2"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/textViewTask2"
+                android:ems="4"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editTextTask3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewTask3"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/textViewTask3"
+                android:ems="4"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editTextTask4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewTask4"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/textViewTask4"
+                android:ems="4"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editTextTask5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewTask5"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/textViewTask5"
+                android:ems="4"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editTextTask6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewTask6"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/textViewTask6"
+                android:ems="4"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editTextTask7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewTask7"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/textViewTask7"
+                android:ems="4"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editTextTask8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewTask8"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/textViewTask8"
+                android:ems="4"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editTextTask9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewTask9"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/textViewTask9"
+                android:ems="4"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/TextViewSumValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/buttonNext"
+                android:layout_alignRight="@+id/buttonNext"
+                android:layout_below="@+id/buttonNext"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+            <TextView
+                android:id="@+id/textViewSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/TextViewSumValue"
+                android:layout_toLeftOf="@+id/TextViewSumValue"
+
+                android:text="Sum:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
