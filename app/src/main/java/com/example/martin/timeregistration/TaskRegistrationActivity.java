@@ -183,7 +183,12 @@ public class TaskRegistrationActivity extends ActionBarActivity {
             int taskNumber = 1;
 
             String taskName = "Task "+taskNumber;
-            Double taskValue = Double.valueOf(et.getText().toString());
+            Double taskValue;
+            try {
+                taskValue = Double.valueOf(et.getText().toString());
+            } catch (Exception ex) {
+                taskValue = 0.0;
+            }
 
             TaskRegistration currentTask = new TaskRegistration(taskName, taskValue);
             tasks.add(currentTask);
