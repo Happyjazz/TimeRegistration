@@ -14,6 +14,7 @@ import static android.support.test.espresso.action.ViewActions.typeText;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
+import static com.example.martin.timeregistration.Tools.ViewActions.setTimePicker;
 
 @RunWith(AndroidJUnit4.class)
 public class TestLoginActivity {
@@ -40,5 +41,10 @@ public class TestLoginActivity {
 
         //Check that the text on textViewTask1 matches with StrTask1Text
         onView(withId(R.id.textViewTask1)).check(matches(withText(StrTask1Text)));
+    }
+
+    @Test
+    public void timePickerSet() {
+        onView(withId(R.id.timePickerTest)).perform(setTimePicker(10, 25));
     }
 }
