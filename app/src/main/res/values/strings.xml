@@ -7,4 +7,10 @@
     <string name="pref_userInformation_title">User information</string>
     <string name="remember">Remember user information?</string>
     <string name="rememberHint">Unchecking will delete the stored user information.</string>
+    <string-array name="spinner_data">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+    </string-array>
 </resources>

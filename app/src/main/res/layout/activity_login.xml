@@ -49,4 +49,31 @@
         android:layout_alignBottom="@+id/buttonLogin"
         android:layout_toLeftOf="@+id/buttonLogin"
         android:layout_toStartOf="@+id/buttonLogin" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerTest"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/spinner_data"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show result"
+        android:id="@+id/buttonTest"
+        android:layout_below="@+id/spinnerTest"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="clickShowResult" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textViewResult"
+        android:layout_below="@+id/buttonTest"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

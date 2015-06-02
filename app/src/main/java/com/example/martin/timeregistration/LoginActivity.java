@@ -2,14 +2,14 @@ package com.example.martin.timeregistration;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.martin.timeregistration.Data.DataAccessObject;
@@ -102,5 +102,12 @@ public class LoginActivity extends ActionBarActivity {
                 Toast.makeText(this, "Login failed", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+    public void clickShowResult(View view) {
+        Spinner spinnerTest = (Spinner)findViewById(R.id.spinnerTest);
+        TextView etResult = (TextView)findViewById(R.id.textViewResult);
+
+        etResult.setText(spinnerTest.getSelectedItem().toString());
     }
 }

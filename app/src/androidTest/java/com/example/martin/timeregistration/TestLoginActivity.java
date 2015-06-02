@@ -23,6 +23,8 @@ public class TestLoginActivity {
 
     private final String StrTask1Text = "Task 1:";
 
+    private final String colorToTest = "Yellow";
+
     @Rule
     public ActivityTestRule<LoginActivity> mActivityRule
             = new ActivityTestRule<>(LoginActivity.class);
@@ -40,5 +42,18 @@ public class TestLoginActivity {
 
         //Check that the text on textViewTask1 matches with StrTask1Text
         onView(withId(R.id.textViewTask1)).check(matches(withText(StrTask1Text)));
+    }
+
+    @Test
+    public void spinnerTest() {
+        //Click the spinner and then click the text "Yellow"
+        onView(withId(R.id.spinnerTest)).perform(click());
+        onView(withText(colorToTest)).perform(click());
+
+        //Click the "Show result" button
+        onView(withId(R.id.buttonTest)).perform(click());
+
+        onView(withId(R.id.textViewResult)).check(matches(withText(colorToTest)));
+
     }
 }
